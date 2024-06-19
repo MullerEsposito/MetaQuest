@@ -1,10 +1,10 @@
 import { useState } from "react"
-import { connect, disconnect } from "@argent/get-starknet"
+import { ConnectedStarknetWindowObject, connect, disconnect } from "@argent/get-starknet"
 
 import style from "./Wallet.module.css"
 
 export function Wallet() {
-  const [connection, setConnection] = useState(undefined);
+  const [connection, setConnection] = useState<ConnectedStarknetWindowObject | undefined>(undefined);
   const [account, setAccount] = useState(undefined);
   const [address, setAddress] = useState("");
 
