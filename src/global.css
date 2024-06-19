@@ -1,0 +1,15 @@
+:root {
+  --background: #000000d6;
+  --blue-300: #b8b8b836;
+  --blue-600: #242e36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+}
