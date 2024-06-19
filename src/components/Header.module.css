@@ -1,0 +1,36 @@
+header {
+  background-color: var(--blue-300);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px auto;
+  width: 80vw;
+  height: 70px;
+  border-radius: 20px;
+}
+
+header > nav a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header > nav a:hover {
+  background-color: var(--blue-300);
+  color: var(--background);
+}
+
+header > button {
+  padding: 5px;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+header > button:hover {
+  color: var(--background);
+}
