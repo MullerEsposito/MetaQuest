@@ -1,5 +1,6 @@
 import metaquestLogo from "../assets/metaquest-logo-transp.png"
 import style from "./Header.module.css"
+import { Wallet } from "./Wallet"
 
 export function Header() {
   return (
@@ -9,13 +10,8 @@ export function Header() {
         <a href="">Intro</a>
         <a href="">Pitch</a>
         <a href="">Demo</a>
-        {/* <ul>
-          <li>Intro</li>
-          <li>Pitch</li>
-          <li>Demo</li>
-        </ul>  */}
       </nav>
-      <button>Connect your wallet</button>
+      <Wallet />
     </header>
   )
 }
