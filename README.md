@@ -10,6 +10,9 @@ This is a decentralized, open-world game that interacts with real-world events w
 ![App Screenshot](https://github.com/MullerEsposito/MetaQuest/blob/main/images/metaquest-game.png?raw=true
 )
 
+## Demo
+
+https://meta-quest-eight.vercel.app/
 
 ## Run Locally
 
