@@ -8,6 +8,13 @@ extends CharacterBody2D
 func _physics_process(_delta: float) -> void:
 	move()
 	animate()
+	print(position)
+	if position.y > 450:
+		#### Manter a câmera em uma posição fixa quando o personagem alcança as coordenadas
+		##position = Vector2(player_position.x, stop_following_y)
+		$Camera.enabled = false
+	else:
+		$Camera.enabled = true
 	
 func move() -> void:
 	var direction: Vector2 = get_direction()
