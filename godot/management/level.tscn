@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgkep2s6h0w73"]
+
+[ext_resource type="Texture2D" uid="uid://bi1psqfhdeth4" path="res://assets/Starknet-Map-Grande.png" id="1_28i0y"]
+[ext_resource type="PackedScene" uid="uid://3ojfragibwgf" path="res://scenes/player.tscn" id="2_7w116"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Terrain" type="Node2D" parent="."]
+modulate = Color(0.333333, 1, 0.670588, 1)
+position = Vector2(1, 0)
+scale = Vector2(20, 159.558)
+
+[node name="TextureRect" type="TextureRect" parent="Terrain"]
+offset_left = -66.7
+offset_top = -12.5284
+offset_right = 139.3
+offset_bottom = 5.47164
+texture = ExtResource("1_28i0y")
+expand_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_7w116")]
+position = Vector2(566, 355)

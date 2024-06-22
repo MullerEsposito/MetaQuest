@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://besgsddxt4pmb"]
+[gd_scene load_steps=11 format=3 uid="uid://3ojfragibwgf"]
 
+[ext_resource type="Texture2D" uid="uid://cqvtwrxqs5por" path="res://assets/player-sprite-sheet.webp" id="1_3hcq1"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_v136v"]
-[ext_resource type="Texture2D" uid="uid://cqvtwrxqs5por" path="res://assets/player-sprite-sheet.webp" id="2_3xdri"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5q7rj"]
 radius = 26.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4g0d8"]
-load_path = "res://.godot/imported/starkgirl-sprite-sheet.png-4ac2dacbbec1c67854e4491effc746ab.ctex"
 
 [sub_resource type="Animation" id="Animation_uqg81"]
 length = 0.001
@@ -74,7 +73,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_3xdri")]
+"values": [ExtResource("1_3hcq1")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -125,7 +124,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_3xdri")]
+"values": [ExtResource("1_3hcq1")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -218,7 +217,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_3xdri")]
+"values": [ExtResource("1_3hcq1")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -270,12 +269,12 @@ _data = {
 script = ExtResource("1_v136v")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(438, 217)
+visible = false
+position = Vector2(-2, 60)
 shape = SubResource("CircleShape2D_5q7rj")
 
 [node name="Texture" type="Sprite2D" parent="."]
-position = Vector2(438.59, 163.103)
-scale = Vector2(0.463, 0.463)
+scale = Vector2(0.304833, 0.304833)
 texture = SubResource("CompressedTexture2D_4g0d8")
 hframes = 4
 vframes = 3
@@ -284,3 +283,5 @@ vframes = 3
 libraries = {
 "": SubResource("AnimationLibrary_t5o3d")
 }
+
+[node name="Camera" type="Camera2D" parent="."]
